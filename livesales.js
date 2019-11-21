@@ -12,7 +12,7 @@ return document.head.appendChild(inject_link);
 
 var arr_linkCssHead = [
 'https://fonts.googleapis.com/css?family=Roboto:400,600',
-'https://cdn.statically.io/gh/merpatiblogger/jasacvmurah/39d12f44/ionicons.min.css',
+'https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css',
 ]
 
 function each_load_css_head(item, index) {
@@ -123,7 +123,7 @@ return document.head.appendChild(inject_link);
 
 var arr_linkCssHead = [
 'https://fonts.googleapis.com/css?family=Roboto:400,600',
-'https://cdn.statically.io/gh/merpatiblogger/jasacvmurah/39d12f44/ionicons.min.css',
+'https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css',
 ]
 
 function each_load_css_head(item, index) {
