@@ -42,7 +42,7 @@ function myJQUERY() {
       <span class="avatarURL" style="background-image:url(' + ifavatarURL + ');"></span>\
       <h5><a class="closeliveSales_widget" href="javascript:void(0);"><i class="icon ion-ios-close"></i></a></h5>\
       <span class="infoOrder">\
-      <b>' + key + '</b> telah membeli <a href="' + value.productURL + '" target="_blank">' + value.productName + '</a>\
+      <b>' + key + '</b> telah membuat <a href="' + value.productURL + '" target="_blank">' + value.productName + '</a>\
       <small><a href="' + value.screenshotURL + '" class="popWin" data-popWidth="304" title="- Bukti Transfer dari ' + key + '"><i class="icon ion-ios-search"></i> Cek</a><i class="icon ion-md-pricetag"></i> <time class="timeago" datetime="' + value.time + '"></time></small>\
       </span>\
       </div>\
