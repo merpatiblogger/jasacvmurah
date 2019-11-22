@@ -26,7 +26,7 @@ if(typeof jQuery=='undefined') {
   var headTag = document.getElementsByTagName("head")[0];
   var loadJQUERY = document.createElement('script');
   loadJQUERY.type = 'text/javascript';
-  loadJQUERY.src = '<script type="text/javascript" src="https://cdn.statically.io/gh/merpatiblogger/jasacvmurah/48d3304a/jquery.min.js"></script>';
+  loadJQUERY.src = 'https://cdn.statically.io/gh/merpatiblogger/jasacvmurah/48d3304a/jquery.min.js';
   loadJQUERY.onload = myJQUERY;
   headTag.appendChild(loadJQUERY);
 }
@@ -158,18 +158,6 @@ function myJQUERY() {
       </span>\
       </div>\
       ').appendTo('.liveSales_widget');
-  });
-  $(".liveSales_widget > .item:gt(0)").removeClass('active');
-  setInterval(function() {
-      $('.liveSales_widget > .item:first').removeClass('active')
-      setTimeout(function() {
-          $('.liveSales_widget > .item:first').next().addClass('active').end().appendTo('.liveSales_widget');
-      }, 4000);
-  }, 8000);
-
-
-  $(document).on('click', '.liveSales_widget .closeliveSales_widget', function() {
-      $(this).parents('.item').addClass('hidden');
   });
 
 
