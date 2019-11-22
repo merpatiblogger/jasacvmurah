@@ -30,30 +30,7 @@ if(typeof jQuery=='undefined') {
   loadJQUERY.onload = myJQUERY;
   headTag.appendChild(loadJQUERY);
 }
-function myJQUERY() {
 
-  $.each(dataSales, function(key, value) {
-      var ifavatarURL = '//lh3.googleusercontent.com/-QlJpOYV6yF4/XNEPty8zjJI/AAAAAAAAF6k/7RaA8suy7AsVhOYwcP6WLMf2qc54GUXWwCEwYBhgL/h60/ava.png';
-      if (value.avatarURL != '') {
-          ifavatarURL = value.avatarURL;
-      }
-      $('\
-      <div class="item" datetime="' + value.time + '">\
-      <span class="avatarURL" style="background-image:url(' + ifavatarURL + ');"></span>\
-      <h5><a class="closeliveSales_widget" href="javascript:void(0);"><i class="icon ion-ios-close"></i></a></h5>\
-      <span class="infoOrder">\
-      <b>' + key + '</b> telah membuat <a href="' + value.productURL + '" target="_blank">' + value.productName + '</a>\
-      <small><a href="' + value.screenshotURL + '" class="popWin" data-popWidth="304" title="- Bukti Transfer dari ' + key + '"><i class="icon ion-ios-search"></i> Cek</a><i class="icon ion-md-pricetag"></i> <time class="timeago" datetime="' + value.time + '"></time></small>\
-      </span>\
-      </div>\
-      ').appendTo('.liveSales_widget');
-  });
-
-
-
-  $(document).on('click', '.liveSales_widget .closeliveSales_widget', function() {
-      $(this).parents('.item').addClass('hidden');
-  });
 
 
   function timeAgo(timeStamp) {
