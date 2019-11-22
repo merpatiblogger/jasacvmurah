@@ -26,7 +26,7 @@ if(typeof jQuery=='undefined') {
   var headTag = document.getElementsByTagName("head")[0];
   var loadJQUERY = document.createElement('script');
   loadJQUERY.type = 'text/javascript';
-  loadJQUERY.src = '<script type="text/javascript" src="https://cdn.statically.io/gh/merpatiblogger/jasacvmurah/665af97f/coba.js"></script>';
+  loadJQUERY.src = '<script type="text/javascript" src="https://cdn.statically.io/gh/merpatiblogger/jasacvmurah/48d3304a/jquery.min.js"></script>';
   loadJQUERY.onload = myJQUERY;
   headTag.appendChild(loadJQUERY);
 }
