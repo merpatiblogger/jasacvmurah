@@ -48,13 +48,7 @@ function myJQUERY() {
       </div>\
       ').appendTo('.liveSales_widget');
   });
-  $(".liveSales_widget > .item:gt(0)").removeClass('active');
-  setInterval(function() {
-      $('.liveSales_widget > .item:first').removeClass('active')
-      setTimeout(function() {
-          $('.liveSales_widget > .item:first').next().addClass('active').end().appendTo('.liveSales_widget');
-      }, 4000);
-  }, 8000);
+
 
 
   $(document).on('click', '.liveSales_widget .closeliveSales_widget', function() {
