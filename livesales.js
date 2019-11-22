@@ -3,25 +3,14 @@ LiveSales-Static-Widget
 ( c ) 2019 by. SEOTemplate.web.id
 */
 
-function load_css_head(posting) {
-var inject_link = document.createElement('link');
-inject_link.rel = 'stylesheet';
-inject_link.href = posting;
-return document.head.appendChild(inject_link);
+if(typeof jQuery=='undefined') {
+  var headTag = document.getElementsByTagName("head")[0];
+  var loadJQUERY = document.createElement('script');
+  loadJQUERY.type = 'text/javascript';
+  loadJQUERY.src = 'https://cdn.statically.io/gh/merpatiblogger/jasacvmurah/48d3304a/jquery.min.js';
+  loadJQUERY.onload = myJQUERY;
+  headTag.appendChild(loadJQUERY);
 }
-
-var arr_linkCssHead = [
-'https://fonts.googleapis.com/css?family=Roboto:400,600',
-'https://unpkg.com/ionicons@4.4.4/dist/css/ionicons.min.css',
-]
-
-function each_load_css_head(item, index) {
-load_css_head(item);
-}
-window.onload=function(){
-arr_linkCssHead.forEach(each_load_css_head);
-}
-
 function myJQUERY() {
 
   $.each(dataSales, function(key, value) {
